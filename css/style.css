@@ -118,6 +118,14 @@ h2 {
 	text-align: center;
 }
 
+.contact {
+	color: #fff;
+	float: right;
+	font-family: sans-serif;
+	font-size: 1.3em;
+	text-decoration: none;
+}
+
 @media (max-width: 675px) {
   .icon-container {
 		height: 100px;
