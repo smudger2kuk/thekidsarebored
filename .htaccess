@@ -1,0 +1,14 @@
+CheckSpelling Off
+AddType x-httpd-php56 .php
+
+# 1 Month for most static assets
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+# Fixing Accept-Encoding Errors
+<IfModule mod_headers.c>
+<FilesMatch ".(js|css|xml|gz|html)$">
+Header append Vary: Accept-Encoding
+</FilesMatch>
+</IfModule>

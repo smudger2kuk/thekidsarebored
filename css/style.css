@@ -110,7 +110,7 @@ h2 {
 #footer a {
 	color: #fff;
 	font-family: sans-serif;
-	position: absolute;
+	position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
@@ -137,7 +137,7 @@ h2 {
     padding: 0;
     text-align: center;
     width: 33%;
-		height: 120px;
+		height: 140px;
   } 
   .my-icon {
     font-size: 8em;
@@ -145,6 +145,10 @@ h2 {
     padding: 0;
     text-align: center;
   }
+	
+	.icon:hover {
+		font-size: 6.6em;
+	}
 	
 	h1 {
   font-size: 2em;
