@@ -13,53 +13,53 @@ var activitiesCloud = ["go to an indoor play centre", "visit the local museum", 
 
 sun.onclick = function () {
 	"use strict";
-  weather = "sun";
-  sun.classList.add('selected');
-  cloud.classList.remove('selected');
-  rain.classList.remove('selected');
+    weather = "sun";
+    sun.classList.add('selected');
+    cloud.classList.remove('selected');
+    rain.classList.remove('selected');
 };
 
 cloud.onclick = function () {
 	"use strict";
-  weather = "cloud";
-  sun.classList.remove('selected');
-  cloud.classList.add('selected');
-  rain.classList.remove('selected');
+    weather = "cloud";
+    sun.classList.remove('selected');
+    cloud.classList.add('selected');
+    rain.classList.remove('selected');
 };
 
 rain.onclick = function () {
 	"use strict";
-  weather = "rain";
-  sun.classList.remove('selected');
-  cloud.classList.remove('selected');
-  rain.classList.add('selected');
+    weather = "rain";
+    sun.classList.remove('selected');
+    cloud.classList.remove('selected');
+    rain.classList.add('selected');
 };
 
 activityButton.onclick = function () {
 	"use strict";
-  var leadingText = "Why don't you ",
+    var leadingText = "Why don't you ",
 		randomValue;
 	
-  if (weather === "sun") {
-    randomValue = Math.floor((Math.random() * (activitiesSun.length)));
-    activityText.innerHTML = leadingText.concat(activitiesSun[randomValue]);
-    activityButton.innerHTML = "Pick another activity";
+    if (weather === "sun") {
+        randomValue = Math.floor((Math.random() * (activitiesSun.length)));
+        activityText.innerHTML = leadingText.concat(activitiesSun[randomValue]);
+        activityButton.innerHTML = "Pick another activity";
     
-  } else if (weather === "cloud") {
-    randomValue = Math.floor((Math.random() * (activitiesCloud.length)));
-    activityText.innerHTML = leadingText.concat(activitiesCloud[randomValue]);
-    activityButton.innerHTML = "Pick another activity";
+    } else if (weather === "cloud") {
+        randomValue = Math.floor((Math.random() * (activitiesCloud.length)));
+        activityText.innerHTML = leadingText.concat(activitiesCloud[randomValue]);
+        activityButton.innerHTML = "Pick another activity";
     
-  } else if (weather === "rain") {
-    randomValue = Math.floor((Math.random() * (activitiesRain.length)));
-    activityText.innerHTML = leadingText.concat(activitiesRain[randomValue]);
-    activityButton.innerHTML = "Pick another activity";
+    } else if (weather === "rain") {
+        randomValue = Math.floor((Math.random() * (activitiesRain.length)));
+        activityText.innerHTML = leadingText.concat(activitiesRain[randomValue]);
+        activityButton.innerHTML = "Pick another activity";
     
-  } else {
-    activityText.innerHTML = "Please choose the weather first";
+    } else {
+        activityText.innerHTML = "Please choose the weather first";
     
-  }
+    }
  
-  activityText.scrollIntoView(true);
+    activityText.scrollIntoView(true);
   
 };
